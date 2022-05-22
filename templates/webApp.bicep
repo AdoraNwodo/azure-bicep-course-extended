@@ -1,4 +1,3 @@
-@description('Specifies the location for resources.')
 param location string = 'westus2'
 
 // Create app service
