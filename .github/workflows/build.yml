@@ -1,0 +1,18 @@
+name: Sample workflow
+
+on:
+  push:
+    branches: [ module3-01-sampleGitHubWorkflow ]
+
+jobs:
+  sample-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'running sample job'
+        run: echo "This is the first job!"
+
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'running second sample job'
+        run: echo "This is the second job!"
