@@ -1,6 +1,6 @@
-$templateFile = '../templates/subscription-scoped.bicep'
+$templateFile = '../templates/multi-scoped.bicep'
 $today = Get-Date -Format 'MM-dd-yyyy'
-$deploymentName = "adora-sub-scoped-$today"
+$deploymentName = "adora-subscription-scoped-$today"
 
 New-AzSubscriptionDeployment `
   -Name $deploymentName `
